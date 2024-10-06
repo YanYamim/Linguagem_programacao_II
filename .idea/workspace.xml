@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2dabc0f-4fcd-46cd-befa-9f756131bd72" name="Changes" comment="Exercício Whatsapp">
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/Calculavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/ItemCompra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/ListaCompra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio2/Supermercado.java" afterDir="false" />
+    <list default="true" id="a2dabc0f-4fcd-46cd-befa-9f756131bd72" name="Changes" comment="Exercício Mercado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Contatinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Contatinho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Mensagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Mensagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgFoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgFoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/MsgTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Whatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/fatec/lp2/exercicio1/Whatsapp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <updated>1727977977541</updated>
       <workItem from="1727977978607" duration="4067000" />
       <workItem from="1728233990550" duration="1271000" />
-      <workItem from="1728235293910" duration="3655000" />
+      <workItem from="1728235293910" duration="8265000" />
     </task>
     <task id="LOCAL-00001" summary="Exercício Whatsapp">
       <option name="closed" value="true" />
@@ -93,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727982035489</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercício Mercado">
+      <option name="closed" value="true" />
+      <created>1728239316113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728239316113</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercício Whatsapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercício Whatsapp" />
+    <MESSAGE value="Exercício Mercado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercício Mercado" />
   </component>
 </project>

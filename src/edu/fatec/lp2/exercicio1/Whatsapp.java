@@ -7,35 +7,27 @@ public class Whatsapp {
     private ArrayList<Mensagem> mensagens;
 
     public Whatsapp() {
-        contatos = new ArrayList<>();
-        mensagens = new ArrayList<>();
+        this.contatos = new ArrayList<>();
+        this.mensagens = new ArrayList<>();
     }
 
     public ArrayList<Contatinho> getContatos() {
         return contatos;
     }
 
-    public void adicionarContato(Contatinho contatinho) {
-        contatos.add(contatinho);
-    }
-
-    public void adicionarMensagem(Mensagem mensagem) {
-        mensagens.add(mensagem);
+    public ArrayList<Mensagem> getMensagens() {
+        return mensagens;
     }
 
     public void listarContatos() {
         for(Contatinho contato : contatos) {
-            if(contato != null) {
-                System.out.println(contato);
-            }
+            System.out.println(contato);;
         }
     }
 
     public void listarMensagens() {
-        for(Mensagem mensagen : mensagens) {
-            if(mensagen != null) {
-                System.out.println(mensagen);
-            }
+        for(Mensagem mensagem : mensagens) {
+            System.out.println(mensagem);
         }
     }
 }

@@ -2,28 +2,27 @@ package edu.fatec.lp2.exercicio1;
 
 public class Main {
     public static void main(String[] args) {
-        Whatsapp whatsapp = new Whatsapp();
+                Whatsapp whatsapp = new Whatsapp();
 
-        whatsapp.adicionarContato(new Contatinho("Alice", "123-456-789"));
-        whatsapp.adicionarContato(new Contatinho("Bob", "987-654-321"));
+                Contatinho contato1 = new Contatinho("Alice", "12345-6789");
+                Contatinho contato2 = new Contatinho("Bob", "98765-4321");
 
-        Mensagem mensagemTexto = new MsgTexto(whatsapp.getContatos().get(0), "10:00", "Olá, Bob!", 12);
-        whatsapp.adicionarMensagem(mensagemTexto);
+                whatsapp.getContatos().add(contato1);
+                whatsapp.getContatos().add(contato2);
 
-        Mensagem novaMensagemTexto = mensagemTexto.sendMessage("Como você está?");
-        whatsapp.adicionarMensagem(novaMensagemTexto);
+                Mensagem mensagemTexto = new MsgTexto(contato1, "10:00", "Olá, Alice!", 15);
+                Mensagem mensagemAudio = new MsgAudio(contato2, "10:05", "Mensagem de áudio", 30);
+                Mensagem mensagemFoto = new MsgFoto(contato1, "10:10", "Foto da festa", 500);
 
-        Mensagem mensagemFoto = new MsgFoto(whatsapp.getContatos().get(1), "10:05", "Foto de viagem", 300);
-        whatsapp.adicionarMensagem(mensagemFoto);
-        Mensagem novaMensagemFoto = mensagemFoto.sendMessage("Nova foto!");
-        whatsapp.adicionarMensagem(novaMensagemFoto);
+                whatsapp.getMensagens().add(mensagemTexto);
+                whatsapp.getMensagens().add(mensagemAudio);
+                whatsapp.getMensagens().add(mensagemFoto);
 
-        Mensagem mensagemAudio = new MsgAudio(whatsapp.getContatos().get(0), "10:10", "Mensagem de voz", 15);
-        whatsapp.adicionarMensagem(mensagemAudio);
-        Mensagem novaMensagemAudio = mensagemAudio.sendMessage("Gravação de áudio!");
-        whatsapp.adicionarMensagem(novaMensagemAudio);
+                System.out.println("Contatos:");
+                whatsapp.listarContatos();
 
-        whatsapp.listarContatos();
-        whatsapp.listarMensagens();
+                System.out.println("\nMensagens:");
+                whatsapp.listarMensagens();
     }
 }
+
