@@ -7,7 +7,7 @@ public class Main {
         whatsapp.adicionarContato(new Contatinho("Alice", "123-456-789"));
         whatsapp.adicionarContato(new Contatinho("Bob", "987-654-321"));
 
-        Mensagem mensagemTexto = new MsgTexto(whatsapp.getContatos().get(0), "10:00", "Olá, Bob!");
+        Mensagem mensagemTexto = new MsgTexto(whatsapp.getContatos().get(0), "10:00", "Olá, Bob!", 12);
         whatsapp.adicionarMensagem(mensagemTexto);
 
         Mensagem novaMensagemTexto = mensagemTexto.sendMessage("Como você está?");
