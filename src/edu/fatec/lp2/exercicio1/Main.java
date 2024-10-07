@@ -2,27 +2,30 @@ package edu.fatec.lp2.exercicio1;
 
 public class Main {
     public static void main(String[] args) {
-                Whatsapp whatsapp = new Whatsapp();
+        Contatinho[] contatos = new Contatinho[3];
+        Mensagem[] mensagens = new Mensagem[3];
 
-                Contatinho contato1 = new Contatinho("Alice", "12345-6789");
-                Contatinho contato2 = new Contatinho("Bob", "98765-4321");
+        Whatsapp whatsapp = new Whatsapp(contatos, mensagens);
 
-                whatsapp.getContatos().add(contato1);
-                whatsapp.getContatos().add(contato2);
+        Contatinho contato1 = new Contatinho("Alice", "12345-6789");
+        Contatinho contato2 = new Contatinho("Bob", "98765-4321");
 
-                Mensagem mensagemTexto = new MsgTexto(contato1, "10:00", "Olá, Alice!", 15);
-                Mensagem mensagemAudio = new MsgAudio(contato2, "10:05", "Mensagem de áudio", 30);
-                Mensagem mensagemFoto = new MsgFoto(contato1, "10:10", "Foto da festa", 500);
+        whatsapp.getContatos()[0] = contato1;
+        whatsapp.getContatos()[1] = contato2;
 
-                whatsapp.getMensagens().add(mensagemTexto);
-                whatsapp.getMensagens().add(mensagemAudio);
-                whatsapp.getMensagens().add(mensagemFoto);
+        Mensagem mensagemTexto = new MsgTexto(contato1, "10:00", "Olá, Alice!", 15);
+        Mensagem mensagemAudio = new MsgAudio(contato2, "10:05", "Mensagem de áudio", 30);
+        Mensagem mensagemFoto = new MsgFoto(contato1, "10:10", "Foto da festa", 500);
 
-                System.out.println("Contatos:");
-                whatsapp.listarContatos();
+        whatsapp.getMensagens()[0] = mensagemTexto;
+        whatsapp.getMensagens()[1] = mensagemAudio;
+        whatsapp.getMensagens()[2] = mensagemFoto;
 
-                System.out.println("\nMensagens:");
-                whatsapp.listarMensagens();
+        System.out.println("Contatos: ");
+        whatsapp.listarContatos();
+
+        System.out.println("Mensagens: ");
+        whatsapp.listarMensagens();
     }
 }
 

@@ -1,21 +1,19 @@
 package edu.fatec.lp2.exercicio1;
 
-import java.util.ArrayList;
-
 public class Whatsapp {
-    private ArrayList<Contatinho> contatos;
-    private ArrayList<Mensagem> mensagens;
+    private Contatinho[] contatos;
+    private Mensagem[]  mensagens;
 
-    public Whatsapp() {
-        this.contatos = new ArrayList<>();
-        this.mensagens = new ArrayList<>();
+    public Whatsapp(Contatinho[] contatos, Mensagem[] mensagens) {
+        this.contatos = contatos;
+        this.mensagens = mensagens;
     }
 
-    public ArrayList<Contatinho> getContatos() {
+    public Contatinho[] getContatos() {
         return contatos;
     }
 
-    public ArrayList<Mensagem> getMensagens() {
+    public Mensagem[] getMensagens() {
         return mensagens;
     }
 

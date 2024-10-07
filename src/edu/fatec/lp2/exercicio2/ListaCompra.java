@@ -1,22 +1,19 @@
 package edu.fatec.lp2.exercicio2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ListaCompra implements Calculavel {
-	private List<ItemCompra> itensCompra;
+	private ItemCompra[] itensCompra;
 	private int quantidadeMax;
 
 	public ListaCompra(int quantidadeMax) {
-		this.itensCompra = new ArrayList<>();
 		this.quantidadeMax = quantidadeMax;
+		this.itensCompra = new ItemCompra[quantidadeMax];
 	}
 
-	public List<ItemCompra> getItensCompra() {
+	public ItemCompra[] getItensCompra() {
 		return itensCompra;
 	}
 
-	public void setItensCompra(List<ItemCompra> itensCompra) {
+	public void setItensCompra(ItemCompra[] itensCompra) {
 		this.itensCompra = itensCompra;
 	}
 
@@ -29,13 +26,14 @@ public class ListaCompra implements Calculavel {
 	}
 
 	public void incluirItem(ItemCompra item) {
-		if(itensCompra.size() < quantidadeMax) {
-			itensCompra.add(item);
-		} else {
-			System.out.println("Limite atingido");
+		boolean inserido = false;
+		for (int i = 0; i < itensCompra.length; i++) {
+			if (itensCompra[i] == null) {
+				itensCompra[i] = item;
+				break;
+			}
 		}
 	}
-
 	@Override
 	public double calcularPreco() {
 		double total = 0;
