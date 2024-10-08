@@ -2,10 +2,10 @@ package edu.fatec.lp2.exercicio2;
 
 public class ItemCompra implements Calculavel {
     private int quantidade;
-    private Produto produto;
     private double desconto;
+    private Produto produto;
 
-    public ItemCompra(int quantidade, Produto produto, double desconto) {
+    public ItemCompra(int quantidade, double desconto, Produto produto) {
         this.quantidade = quantidade;
         this.produto = produto;
         this.desconto = desconto;

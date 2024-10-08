@@ -2,11 +2,11 @@ package edu.fatec.lp2.exercicio2;
 
 public class ListaCompra implements Calculavel {
 	private ItemCompra[] itensCompra;
-	private int quantidadeMax;
+	private int qtdMax;
 
-	public ListaCompra(int quantidadeMax) {
-		this.quantidadeMax = quantidadeMax;
-		this.itensCompra = new ItemCompra[quantidadeMax];
+	public ListaCompra(int qtdMax) {
+		this.qtdMax = qtdMax;
+		this.itensCompra = new ItemCompra[qtdMax];
 	}
 
 	public ItemCompra[] getItensCompra() {
@@ -17,31 +17,34 @@ public class ListaCompra implements Calculavel {
 		this.itensCompra = itensCompra;
 	}
 
-	public int getQuantidadeMax() {
-		return quantidadeMax;
+	public int getQtdMax() {
+		return qtdMax;
 	}
 
-	public void setQuantidadeMax(int quantidadeMax) {
-		this.quantidadeMax = quantidadeMax;
+	public void setQtdMax(int qtdMax) {
+		this.qtdMax = qtdMax;
 	}
 
 	public void incluirItem(ItemCompra item) {
-		boolean inserido = false;
-		for (int i = 0; i < itensCompra.length; i++) {
-			if (itensCompra[i] == null) {
+		for(int i = 0; i < itensCompra.length; i++) {
+			if(itensCompra[i] == null) {
 				itensCompra[i] = item;
 				break;
 			}
 		}
 	}
+
 	@Override
 	public double calcularPreco() {
-		double total = 0;
+		double preco = 0;
 		for(ItemCompra item : itensCompra) {
-			total += item.calcularPreco();
+			if(item != null) {
+				preco += item.calcularPreco();
+			}
 		}
-		return total;
+		return preco;
 	}
 }
+
 
 

@@ -2,16 +2,16 @@ package edu.fatec.lp2.exercicio2;
 
 public class Produto {
 	private String nome;
-	private String unidade;
 	private String descricao;
+	private String unidade;
 	private double preco;
 	private double descontoMaximo;
 	private Supermercado supermercado;
 
-	public Produto(String nome, String unidade, String descricao, double preco, double descontoMaximo, Supermercado supermercado) {
+	public Produto(String nome, String descricao, String unidade, double preco, double descontoMaximo, Supermercado supermercado) {
 		this.nome = nome;
-		this.unidade = unidade;
 		this.descricao = descricao;
+		this.unidade = unidade;
 		this.preco = preco;
 		this.descontoMaximo = descontoMaximo;
 		this.supermercado = supermercado;
@@ -25,20 +25,20 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public String getUnidade() {
-		return unidade;
-	}
-
-	public void setUnidade(String unidade) {
-		this.unidade = unidade;
-	}
-
 	public String getDescricao() {
 		return descricao;
 	}
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public String getUnidade() {
+		return unidade;
+	}
+
+	public void setUnidade(String unidade) {
+		this.unidade = unidade;
 	}
 
 	public double getPreco() {
@@ -65,10 +65,7 @@ public class Produto {
 		this.supermercado = supermercado;
 	}
 
-	public Produto produto(String supermercado) {
-
+	public String toString(String supermercado) {
 		return null;
 	}
-
-
 }

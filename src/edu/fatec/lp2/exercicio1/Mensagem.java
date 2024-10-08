@@ -1,42 +1,42 @@
 package edu.fatec.lp2.exercicio1;
 
 abstract class Mensagem {
-    private Contatinho destinatario;
-    private String horaEnvio;
-    private String conteudo;
+   private Contatinho destinatario;
+   private String horaEnvio;
+   private String conteudo;
 
-    public Mensagem(Contatinho destinatario, String horaEnvio, String conteudo) {
-        this.destinatario = destinatario;
-        this.horaEnvio = horaEnvio;
-        this.conteudo = conteudo;
-    }
+   public Mensagem(Contatinho destinatario, String horaEnvio, String conteudo) {
+       this.destinatario = destinatario;
+       this.horaEnvio = horaEnvio;
+       this.conteudo = conteudo;
+   }
 
-    public Contatinho getDestinatario() {
-        return destinatario;
-    }
+   public Contatinho getDestinatario() {
+       return destinatario;
+   }
 
-    public void setDestinatario(Contatinho destinatario) {
-        this.destinatario = destinatario;
-    }
+   public void setDestinatario(Contatinho destinatario) {
+       this.destinatario = destinatario;
+   }
 
-    public String getHoraEnvio() {
-        return horaEnvio;
-    }
+   public String getHoraEnvio() {
+       return horaEnvio;
+   }
 
-    public void setHoraEnvio(String horaEnvio) {
-        this.horaEnvio = horaEnvio;
-    }
+   public void setHoraEnvio(String horaEnvio) {
+       this.horaEnvio = horaEnvio;
+   }
 
-    public String getConteudo() {
-        return conteudo;
-    }
+   public String getConteudo() {
+       return conteudo;
+   }
 
-    public void setConteudo(String conteudo) {
-        this.conteudo = conteudo;
-    }
+   public void setConteudo(String conteudo) {
+       this.conteudo = conteudo;
+   }
 
-    @Override
+   @Override
     public abstract String toString();
 
-    public abstract Mensagem sendMessage(String conteudo);
+   public abstract Mensagem sendMessage(String conteudo);
 }
